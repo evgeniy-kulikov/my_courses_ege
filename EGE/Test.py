@@ -6,33 +6,30 @@
 #         n //= b
 #     return r
 
-
-
-#
+# https://stepik.org/lesson/2002474/step/9?unit=2030625
 """
-
+# Крылов 20 вариантов - 2023
+Вар. 03
+Откройте файл электронной таблицы, содержащей в каждой строке восемь натуральных чисел. 
+Определите количество строк таблицы, для чисел которых выполнены оба условия:
+ В строке есть одно число, которое повторяется трижды, есть другое число, которое повторяется дважды, остальные три числа различны.
+ Среднее арифмитическое трёх неповторяющихся чисел строки не больше числа, повторяющегося в строке трижды.
+В ответе запишите только число.
 """
-# ОЧЕНЬ ДОЛГО !!!
-# from itertools import product
 # cnt = 0
-# alf = [chr(i) for i in range(ord('Я'), ord('А') - 1, -1)]
-# for p in product(alf, repeat=11):
-#     p = ''.join(p)
-#     cnt += 1
-#     if p == 'ИНФОРМАТИКА':
-#         print(cnt)
-#         break
+# with open('09/09-09.txt') as file:
+#     for fl in file:
+#         d = sorted(map(int, fl.split()))
+#         three = [i for i in d if d.count(i) == 3]
+#         two = [i for i in d if d.count(i) == 2]
+#         one = [i for i in d if d.count(i) == 1]
+#         if len(three) == 3 and len(two) == 2 and len(one) == 3:
+#             cnt += sum(one) / 3 <= three[0]
+#     print(cnt)  # 42
 
 
-from itertools import permutations
-res = set()
-for p in permutations('bbbbrrrgg'):
-    p = ''.join(p)
-    if p[0] != p[-1] and 'bb' not in p and 'rr' not in p and 'gg' not in p:
-        if p != p[::-1]:
-           res |= {p}
+from math import ceil, log2
 
-for _ in res:
-    print(_)
-
-
+psw = ceil(ceil(log2(10 + 52 + 6)) * 9 / 8)
+add = 500 // 20 - psw
+print(add)
