@@ -1,11 +1,15 @@
 """ Task 09 """
+
+# Ссылка на мой урок
 """
-Ссылка на мой урок
+https://kompege.ru/task
 Ссылка на источник
+
+Условие задачи
 """
 
 
-
+# https://stepik.org/edit-lesson/2002474/step/11
 # https://stepik.org/lesson/2002474/step/2?unit=2030625
 """
 https://stepik.org/lesson/1210202/step/5?unit=1223456
@@ -195,9 +199,24 @@ with open('09/09-08.txt') as file:
     print(cnt)  # 17
 
 
+# https://stepik.org/edit-lesson/2002474/step/11
+"""
+https://stepik.org/lesson/1049890/step/15?unit=1065214
+Откройте файл электронной таблицы, содержащей в каждой строке четыре натуральных числа. Определите количество строк таблицы, для чисел которых выполнены оба условия:
+ – среди четырёх чисел есть только одна пара равных чисел;
+ – число, не являющееся ни максимальным, ни минимальным, больше 67.
+В ответе запишите только число.
+"""
+c = 0
+for i in open('09/09-10.txt'):
+    d = sorted(set(map(int, i.split())))
+    c += len(d) == 3 and d[1] > 67
+print(c)  # 247
+
 
 
 # ПОСЛЕДНЯЯ ЗАДАЧА
+# https://stepik.org/edit-lesson/2002474/step/12
 """
 https://stepik.org/lesson/797932/step/3?auth=login&unit=819598
 В файле электронной таблицы 09-10.xls в каждой строке содержатся шесть натуральных чисел. Определите количество строк таблицы, для которых выполнены оба условия:
@@ -213,7 +232,7 @@ from statistics import geometric_mean
 from math import prod
 
 cnt = 0
-with open('09/09-10.txt') as file:
+with open('09/09-11.txt') as file:
     for f in file:
         d = list(map(int, f.split()))
         one = [i for i in d if d.count(i) == 1]
