@@ -1,4 +1,4 @@
-""" Task 05 """
+""" Task 05_1 """
 
 # Ссылка на мой урок
 """
@@ -7,8 +7,10 @@ https://kompege.ru/task
 
 Условие задачи
 """
+""" Взято на мой курс """
 
-# https://stepik.org/edit-lesson/1993065/step/2
+
+# https://stepik.org/lesson/1993065/step/1?unit=2021073
 """
 https://kompege.ru/task
 № 23551 Пересдача 03.07.25 (Уровень: Базовый)
@@ -38,7 +40,7 @@ for n in range(100, 0, -1):
 
 
 
-# https://stepik.org/lesson/1993065/step/3?unit=2021073
+# https://stepik.org/lesson/1993065/step/2?unit=2021073
 """
 https://stepik.org/lesson/1220674/step/3?unit=1234060
 
@@ -61,7 +63,7 @@ for n in range(1, 100):
         break
 
 
-# https://stepik.org/lesson/1993065/step/4?unit=2021073
+# https://stepik.org/lesson/1993065/step/3?unit=2021073
 """
 https://stepik.org/lesson/1220674/step/5?unit=1234060
 
@@ -83,7 +85,7 @@ for n in range(1, 1000):
 print(min(res))  # 227
 
 
-# https://stepik.org/lesson/1993065/step/5?unit=2021073
+# https://stepik.org/lesson/1993065/step/4?unit=2021073
 """
 https://kompege.ru/task
 № 23264 Основная волна 11.06.25 (Уровень: Базовый)
@@ -123,7 +125,7 @@ for n in range(1, 1000):
 print(min(res))  # 162
 
 
-# https://stepik.org/lesson/1993065/step/6?unit=2021073
+# https://stepik.org/lesson/1993065/step/5?unit=2021073
 """
 https://stepik.org/lesson/1220674/step/6?unit=1234060
 
@@ -143,7 +145,7 @@ for n in range(1, 10000):
 
 
 
-# https://stepik.org/lesson/1993065/step/7?unit=2021073
+# https://stepik.org/lesson/1993065/step/6?unit=2021073
 """
 https://stepik.org/lesson/1993065/step/7?unit=2021073
 Алгоритм получает на вход натуральное число N> 1 и строит по нему новое число R следующим образом:
@@ -175,7 +177,7 @@ for n in range(80, 10000):
 
 
 
-# https://stepik.org/lesson/1993065/step/8?unit=2021073
+# https://stepik.org/lesson/1993065/step/7?unit=2021073
 """
 https://kompege.ru/task
 № 20182 (Уровень: Базовый)
@@ -208,7 +210,7 @@ for n in range(1, 200):
 
 
 
-# https://stepik.org/lesson/1993065/step/9?unit=2021073
+# https://stepik.org/lesson/1993065/step/8?unit=2021073
 """
 https://kompege.ru/task	
 № 19888 (Уровень: Базовый)
@@ -239,7 +241,7 @@ print(res)  # 294
 
 
 
-# https://stepik.org/lesson/1993065/step/10?unit=2021073
+# https://stepik.org/lesson/1993065/step/9?unit=2021073
 """
 https://kompege.ru/task	
 № 18578 (Уровень: Базовый)
@@ -274,7 +276,7 @@ for n in range(100, 0, -1):
         break
 
 
-# https://stepik.org/lesson/1993065/step/11?unit=2021073
+# https://stepik.org/lesson/1993065/step/10?unit=2021073
 """
 https://kompege.ru/task	
 4462 Джобс 15.06.2022 (Уровень: Базовый)
@@ -307,7 +309,7 @@ print(res)  # 444
 
 
 
-# https://stepik.org/lesson/1993065/step/12?unit=2021073
+# https://stepik.org/lesson/1993065/step/11?unit=2021073
 """
 https://kompege.ru/task
 9360 Джобс 10.06.23 (Уровень: Базовый)
@@ -333,7 +335,7 @@ res.sort()
 print(res[0][1])  # 39
 
 
-# https://stepik.org/lesson/1993065/step/13?unit=2021073
+# https://stepik.org/lesson/1993065/step/12?unit=2021073
 """
 https://stepik.org/lesson/564212/step/10?unit=558460
 

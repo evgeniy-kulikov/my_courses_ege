@@ -66,3 +66,23 @@ for p in permutations(s):
 БГДАВЗЖЕ
 """
 
+
+# 01_02_06
+from itertools import permutations
+g = 'fe ed dg ga ah hf bf bh bc cg'.split()
+t = '478 38 256 15 34 37 168 127'.split()
+s = 'abcdefgh'
+print(*'12345678')
+
+for p in permutations(s):
+    if all(str(p.index(x) + 1) in t[p.index(y)] for x, y in g):
+        print(' '.join(p))
+"""
+1 2 3 4 5 6 7 8
+F A G E D C B H
+F C G E D A H B
+11 + 34 = 45
+"""
+
+
+

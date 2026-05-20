@@ -1,4 +1,9 @@
 """ Task 02 """
+"""
+Ссылка на мой урок
+Ссылка на источник
+"""
+""" Взято на мой курс """
 
 # https://stepik.org/lesson/1981009/step/2?unit=2008837
 from itertools import *
@@ -131,3 +136,21 @@ for p in permutations('xywz'):
         f(**dict(zip(p, t[1])))[1],
         f(**dict(zip(p, t[2])))[2]] == [1, 0, 1]:
         print(''.join(p))  # wyxz
+
+
+# https://stepik.org/lesson/1981009/step/12?unit=2008837
+# https://stepik.org/lesson/658064/step/2?unit=655471
+# Приоритеты алгебры логики
+# 1. (b v b)
+# 2. (b v b) -> c
+# 3. a == (b v b) -> c
+from itertools import *
+def f(a,b,c):
+    return a == (not b or c)
+
+for m1,m2,m3,m4 in product((0,1), repeat=4):
+    t = [(m1,0,0), (0,0,m2), (0,m3,m4)]
+    if len(set(t)) == 3:
+        for p in permutations('abc'):
+            if all(f(**dict(zip(p, d))) for d in t):
+                print(''.join(p))  # bca
