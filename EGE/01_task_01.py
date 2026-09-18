@@ -1,4 +1,29 @@
+""""""
+
+"""
+3208 9531 
+17514 17664 23185  31347
+"""
+
+
+
+"""
+1.2 Аналитическое решение
+"""
+
+# 01_01_08
+# EGE/01/01_1_08.gif
+# https://stepik.org/lesson/1975275/step/8?unit=2003034
+# 31347 Пересдача 08.07.26(Уровень: Базовый)
+# 13
+
+
+
+"""
+1.3 Программное решение
+"""
 # 01_02_01
+# 17514 Основная волна 07.06.24(Уровень: Базовый)
 from itertools import permutations
 g = 'bh hf fd dc ce ea ab ah ge gf gc'.split()
 t = '247 148 578 126 38 47 136 235'.split()
@@ -16,6 +41,7 @@ g e h c b d f a
 
 
 # 01_02_02
+# 17664 Пересдача 04.07.24(Уровень: Базовый)
 from itertools import permutations
 g = 'fc ch hb be ea af ab gd gc dh'.split()
 t = '248 157 456 136 23 34 28 17'.split()
@@ -50,15 +76,16 @@ f -> e = 5+3+13+2 = 23
 
 
 # 01_02_05
+# 9531 Джобс 14.06.23(Уровень: Средний)
 from itertools import permutations
 g = 'аб бд де еж жз за зе гд ва вб вг'.split()
 t = '345 35 128 156 124 478 68 367'.split()
 s = 'абвгдежз'
-print(*'12345678')
+print(*range(1, 9), sep='')
 
 for p in permutations(s):
     if all(str(p.index(x) + 1) in t[p.index(y)] for x, y in g):
-        print(*''.join(p))
+        # print(*''.join(p))
         print(''.join(p).upper())
 """
 1 2 3 4 5 6 7 8
@@ -68,6 +95,7 @@ for p in permutations(s):
 
 
 # 01_02_06
+# 23185 Основная волна 10.06.25(Уровень: Базовый)
 from itertools import permutations
 g = 'fe ed dg ga ah hf bf bh bc cg'.split()
 t = '478 38 256 15 34 37 168 127'.split()
@@ -85,4 +113,15 @@ F C G E D A H B
 """
 
 
-
+# 9531 Джобс 14.06.23(Уровень: Средний)
+from itertools import *
+print(*range(1, 9), sep='')
+g = 'аб бд де еж жз за ва вб вг гд зе'.split()
+t = '345 35 128 156 124 478 68 367'.split()
+for p in permutations('абвгдежз'):
+    if all(str(p.index(x) + 1) in t[p.index(y)] for x, y in g):
+        print(''.join(p).upper())
+"""
+12345678
+БГДАВЗЖЕ
+"""

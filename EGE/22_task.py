@@ -8,6 +8,10 @@ https://kompege.ru/task
 Условие задачи
 """
 
+"""
+5071 11516 11519 11842
+"""
+
 
 # https://stepik.org/lesson/2350748/step/1?unit=2386155
 """
