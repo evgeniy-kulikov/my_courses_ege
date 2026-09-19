@@ -2,9 +2,12 @@
 
 """
 3208 9531 
-17514 17664 23185  31347
+17514 17664 23185 31347 
 """
-
+"""
+Есть на вариантах экзаменов
+31498
+"""
 
 
 """
@@ -124,4 +127,21 @@ for p in permutations('абвгдежз'):
 """
 12345678
 БГДАВЗЖЕ
+"""
+
+
+#  31498 Демоверсия 2027(Уровень: Базовый)
+from itertools import permutations
+print(*'123456')
+g = 'af fc cb be ea df db de'.split()
+t = '256 13 245 356 134 14'.split()
+for p in permutations('abcdef'):
+    if all(str(p.index(x) + 1) in t[p.index(y)] for x, y in g):
+        print(*p)
+"""
+1 2 3 4 5 6
+f a e b d c
+f c b e d a
+
+21 + 5 = 26
 """

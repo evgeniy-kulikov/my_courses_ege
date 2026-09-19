@@ -1,9 +1,13 @@
 """ Task 02 """
+
 """
-Ссылка на мой урок
-Ссылка на источник
+????
 """
-""" Взято на мой курс """
+"""
+Есть на вариантах экзаменов
+31499
+"""
+
 
 # https://stepik.org/lesson/1981009/step/2?unit=2008837
 from itertools import *
@@ -154,3 +158,10 @@ for m1,m2,m3,m4 in product((0,1), repeat=4):
         for p in permutations('abc'):
             if all(f(**dict(zip(p, d))) for d in t):
                 print(''.join(p))  # bca
+
+
+"""
+Ссылка на мой урок
+Ссылка на источник
+"""
+""" Взято на мой курс """
