@@ -3,7 +3,7 @@
 
 
 
-# https://stepik.org/lesson/2304302/step/2?unit=2339056
+# https://stepik.org/edit-lesson/2304302/step/1
 """
 https://stepik.org/lesson/644891/step/2?unit=641496
 
@@ -26,7 +26,7 @@ for n in range(100):
         break
 
 
-# https://stepik.org/lesson/2304302/step/3?unit=2339056
+# https://stepik.org/edit-lesson/2304302/step/2
 """
 https://stepik.org/lesson/564227/step/3?unit=558475
 
@@ -50,7 +50,7 @@ for k in range(1, 100):
         break
 
 
-# https://stepik.org/lesson/2304302/step/4?unit=2339056
+# https://stepik.org/edit-lesson/2304302/step/3
 """
 https://stepik.org/lesson/564227/step/4?unit=558475
 
@@ -76,13 +76,51 @@ print(res.count(min(res)))  # 4
 
 
 
-# Ссылка на мой урок
+# https://stepik.org/lesson/2304302/step/4?unit=2339056
 """
 https://kompege.ru/task
-Ссылка на источник
-
-Условие задачи
+4494 (Уровень: Средний)
+У исполнителя Калькулятор есть три команды, которым присвоены номера:
+1. Прибавить 1
+2. Прибавить 2
+3. Прибавить 4
+Определите число, для получения которого из числа 15 существует 4930 программ.
 """
+def f(a, b):
+    if a == b:
+        return 1
+    if a > b:
+        return 0
+    return f(a+1, b) + f(a+2, b) + f(a+4, b)
+
+for n in range(16, 1000):
+    if f(15, n) == 4930:
+        print(n)  # 31
+        break
+
+
+
+# Ссылка на мой урок
+"""
+https://stepik.org/lesson/1149683/step/10?unit=1161670
+Исполнитель Калькулятор преобразует число на экране. У исполнителя есть три команды, которые присвоены номера:
+1. Прибавь 1
+2. Прибавь 4
+3. Умножить на 2
+Сколько существует программ, состоящих из 7 команд, для которых при исходном числе 3 результатом является число 27?
+"""
+def f(st, end, cnt):
+    if st > end:
+        return 0
+    if st == end and cnt:
+        return 0
+    if st == end and not cnt:
+        return 1
+    return f(st + 1, end, cnt - 1) + f(st + 4, end, cnt - 1) + f(st * 2, end, cnt - 1)
+print(f(3, 27, 7))  # 37
+
+
+
 
 
 # Ссылка на мой урок

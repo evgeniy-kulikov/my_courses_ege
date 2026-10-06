@@ -18,7 +18,7 @@ https://kompege.ru/task
 """
 
 
-# https://stepik.org/lesson/2304296/step/2?unit=2339050
+# https://stepik.org/lesson/2304296/step/1?unit=2339050
 """
 https://stepik.org/lesson/460368/step/11?auth=login&unit=450951
 
@@ -36,7 +36,7 @@ def f(a, b):
 print(f(1, 16))  # 36
 
 
-# https://stepik.org/lesson/2304296/step/3?unit=2339050
+# https://stepik.org/lesson/2304296/step/2?unit=2339050
 """
 https://stepik.org/lesson/569846/step/6?unit=564380
 
@@ -55,7 +55,7 @@ def fn(a, b):
 print(fn(2, 15) * fn(15, 18))  # 5
 
 
-# https://stepik.org/lesson/2304296/step/4?unit=2339050
+# https://stepik.org/lesson/2304296/step/3?unit=2339050
 """
 https://kompege.ru/task
 27633 Апробация 04.03.26 (Уровень: Базовый)
@@ -77,7 +77,7 @@ def fn(a, b):
 print(fn(40, 17) * fn(17, 6))  # 56
 
 
-# https://stepik.org/lesson/2304296/step/5?unit=2339050
+# https://stepik.org/lesson/2304296/step/4?unit=2339050
 """
 https://stepik.org/lesson/569846/step/8?unit=564380
 
@@ -96,7 +96,7 @@ def fn(a, b):
 print(fn(4, 28))  # 3780
 
 
-# https://stepik.org/lesson/2304296/step/6?unit=2339050
+# https://stepik.org/lesson/2304296/step/5?unit=2339050
 """
 https://kompege.ru/task
 25360 ЕГКР 13.12.25 (Уровень: Базовый)
@@ -117,7 +117,7 @@ def fn(a, b):
 print(fn(86, 53) * fn(53, 12))  # 144
 
 
-# https://stepik.org/lesson/2304296/step/7?unit=2339050
+# https://stepik.org/lesson/2304296/step/6?unit=2339050
 """
 Исполнитель преобразует число, записанное на экране. У исполнителя есть три команды, которым присвоены номера:
 1. Вычесть 1
@@ -138,7 +138,7 @@ def fn(a, b):
 print(fn(22, 2))
 
 
-# https://stepik.org/lesson/2304296/step/8?unit=2339050
+# https://stepik.org/lesson/2304296/step/7?unit=2339050
 """
 https://kompege.ru/task
 27312 (Уровень: Средний)
@@ -160,7 +160,7 @@ def fn(a, b, c=0):
 print(fn(106, 6))  # 4128
 
 
-# https://stepik.org/lesson/2304296/step/9?unit=2339050
+# https://stepik.org/lesson/2304296/step/8?unit=2339050
 """
 https://kompege.ru/task
 8585 (Уровень: Базовый)
@@ -182,7 +182,7 @@ def f(a, b):
 print(f(40, 25) * f(25, 10))  # 247
 
 
-# https://stepik.org/lesson/2304296/step/10?unit=2339050
+# https://stepik.org/lesson/2304296/step/9?unit=2339050
 """
 # https://stepik.org/lesson/564194/step/11?unit=558442
 
@@ -207,7 +207,7 @@ def f(a, b):
 print(f(1, 68))  # 3628
 
 
-# https://stepik.org/lesson/2304296/step/11?unit=2339050
+# https://stepik.org/lesson/2304296/step/10?unit=2339050
 """
 https://stepik.org/lesson/564227/step/9?unit=558475
 
@@ -230,7 +230,7 @@ b = int('110001', 2)
 print(f(a, b))  # 33
 
 
-# https://stepik.org/lesson/2304296/step/12?unit=2339050
+# https://stepik.org/lesson/2304296/step/11?unit=2339050
 """
 https://kompege.ru/task
 7011 (Уровень: Средний)
@@ -254,7 +254,7 @@ def f(a, b, s=''):
 print(f(2, 40))
 
 
-# # https://stepik.org/lesson/2304296/step/13?unit=2339050
+# # https://stepik.org/lesson/2304296/step/12?unit=2339050
 """
 https://kompege.ru/task
 11953 (Уровень: Средний)
@@ -292,6 +292,8 @@ def f(a, b):
         res += f(a + a % 68, b)
     return res
 print(f(2, 68) * f(68, 680))  # 47997789947424
+
+
 
 
 
